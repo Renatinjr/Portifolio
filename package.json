@@ -1,0 +1,17 @@
+{
+  "name": "coffe_prject",
+  "version": "1.0.0",
+  "description": "train",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/nav_top.scss:./css/style.css"
+  },
+  "keywords": [
+    "hashR"
+  ],
+  "author": "Renato",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

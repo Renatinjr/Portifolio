@@ -1,0 +1,279 @@
+@import url(config.scss);
+//configs
+*,
+*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, serif, Courier, monospace;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+//variables
+$root_backgroundColor:#fff1eb;
+
+$color_black:#000;
+$color_font_grey:#a99890;
+$color_font_white:#fff;
+$colorHover_linkNav:#df9878;
+
+$btn_primary_color:#d56d3f;
+
+$marin_center:0 auto;
+
+
+//button config
+.btn{
+    color: $color_font_white;
+}
+
+//root container page
+#root{
+    max-width: 100vw;
+    min-height:100vh;
+    background-color:$root_backgroundColor;
+}
+
+//header
+
+.header{
+width: 100%;
+max-width: 98rem;
+height: 4.5rem;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+//header logo
+.logo-container{
+display: flex;
+align-items: center;
+
+h2{
+    font-size: 2rem;
+}
+}
+
+.logo-sushi-icon{
+    max-width: 6rem;
+    height: 2.3rem;
+    margin-right:.2rem;
+}
+
+//header nav
+
+.header-nav{
+.nav-links{
+  display:flex ;
+  justify-content: space-between; 
+
+  li{
+    list-style: none;
+    margin-right: .4rem;
+    padding: .3rem .6rem;
+  }
+
+  a:link, a:visited{
+    font-size: 1.7rem;
+    color: $color_black;
+    text-decoration: none;
+
+  }
+
+  a:hover{
+    color:$colorHover_linkNav;
+}
+}
+}
+
+//Content page
+.page-container{
+position: relative;
+
+.img-left-1{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: auto;
+    max-width: 12rem;
+    transform: rotateX(180deg);
+}
+.img-right-1{
+    position: absolute;
+    top:25%;
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-width: 12rem;
+}
+}
+
+//conteudo pagina
+.page-main-content{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 98rem;
+    height: 4.5rem;
+    margin: $marin_center;
+
+    display: flex;
+    align-items: center;
+
+    .page-main-text_presentation{
+        h1{
+            font-size: 7rem;
+
+            img{
+                width: 100%;
+                max-width: 5rem;
+                height: 100%;
+            }
+        }
+
+            p{
+                font-size: 1.8rem;
+                color: $color_font_grey;
+                margin-top: 2rem;
+            }
+
+        .btn-main{
+            background-color: $btn_primary_color;
+            width: 40%;
+            padding: 1.2rem 0;
+            border-radius: 4rem;
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            position: relative;
+
+
+            span{
+            width: 10%;
+            position: absolute;
+            right: 2rem;
+            bottom: 1.5rem;
+
+
+            .icon_arrow{
+                width: 100%;
+                max-width: 2rem;
+            }
+            }
+        }
+        :hover{
+            .icon_arrow{
+            transition: all .3s ease;
+                transform: translateX(.3rem);
+            }
+        }
+
+    }
+
+    .main-sushi-img{
+    width: 100%;
+    max-width: 54rem;
+    height: auto;
+    }
+
+}
+
+
+//Page popular dishes
+.page-popular_dishes{
+width: 100%;
+max-width: 90rem;
+height: 100vh;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+h3{
+    font-size: 2.5rem;
+    color: $colorHover_linkNav;
+}
+h2{
+    font-size: 3.5rem;
+}
+
+.page-poular_itens_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+
+.item_dishes{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+max-width: 25rem;
+height: auto;
+background-color:#fff5f0;
+border-radius: 1rem;
+box-shadow: 0 3px 10px rgba(184, 182, 182, 0.1);
+
+
+
+.item-dishes_img{
+transform: translateY(-2.5rem);
+width: 100%;
+max-width: 24rem;
+height: auto;
+transition: all .2s; 
+}
+.item-dishes_img:hover{
+    transform: translateY(-3rem);
+}
+
+
+
+h3{
+color: $color_black;
+font-size: 2.2rem;
+}
+
+h5{
+    font-size: 1.4rem;
+    color: $color_font_grey;
+}
+h4{
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+    color: #d56d3f;
+    
+}
+button{
+position: absolute;
+right: 1.5rem;
+bottom: 0;
+width: 4rem;
+height: 3.8rem;
+border: none;
+cursor: pointer;
+background-image: url(../img/bag.png) ;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #d56d3f;
+border-radius: 100%;
+
+}
+
+}
+
+}
+}
+
+
+
+

@@ -1,0 +1,215 @@
+@import url(config.scss);
+*,
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, Times, serif, Courier, monospace;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.btn {
+  color: #fff;
+}
+
+#root {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #fff1eb;
+}
+
+.header {
+  width: 100%;
+  max-width: 98rem;
+  height: 4.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container h2 {
+  font-size: 2rem;
+}
+
+.logo-sushi-icon {
+  max-width: 6rem;
+  height: 2.3rem;
+  margin-right: 0.2rem;
+}
+
+.header-nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav .nav-links li {
+  list-style: none;
+  margin-right: 0.4rem;
+  padding: 0.3rem 0.6rem;
+}
+.header-nav .nav-links a:link, .header-nav .nav-links a:visited {
+  font-size: 1.7rem;
+  color: #000;
+  text-decoration: none;
+}
+.header-nav .nav-links a:hover {
+  color: #df9878;
+}
+
+.page-container {
+  position: relative;
+}
+.page-container .img-left-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  max-width: 12rem;
+  transform: rotateX(180deg);
+}
+.page-container .img-right-1 {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 100%;
+  height: auto;
+  max-width: 12rem;
+}
+
+.page-main-content {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 98rem;
+  height: 4.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.page-main-content .page-main-text_presentation h1 {
+  font-size: 7rem;
+}
+.page-main-content .page-main-text_presentation h1 img {
+  width: 100%;
+  max-width: 5rem;
+  height: 100%;
+}
+.page-main-content .page-main-text_presentation p {
+  font-size: 1.8rem;
+  color: #a99890;
+  margin-top: 2rem;
+}
+.page-main-content .page-main-text_presentation .btn-main {
+  background-color: #d56d3f;
+  width: 40%;
+  padding: 1.2rem 0;
+  border-radius: 4rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.page-main-content .page-main-text_presentation .btn-main span {
+  width: 10%;
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+}
+.page-main-content .page-main-text_presentation .btn-main span .icon_arrow {
+  width: 100%;
+  max-width: 2rem;
+}
+.page-main-content .page-main-text_presentation :hover .icon_arrow {
+  transition: all 0.3s ease;
+  transform: translateX(0.3rem);
+}
+.page-main-content .main-sushi-img {
+  width: 100%;
+  max-width: 54rem;
+  height: auto;
+}
+
+.page-popular_dishes {
+  width: 100%;
+  max-width: 90rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-popular_dishes h3 {
+  font-size: 2.5rem;
+  color: #df9878;
+}
+.page-popular_dishes h2 {
+  font-size: 3.5rem;
+}
+.page-popular_dishes .page-poular_itens_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  background-color: #fff5f0;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(184, 182, 182, 0.1);
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes .item-dishes_img {
+  transform: translateY(-2.5rem);
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+  transition: all 0.2s;
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes .item-dishes_img:hover {
+  transform: translateY(-3rem);
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes h3 {
+  color: #000;
+  font-size: 2.2rem;
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes h5 {
+  font-size: 1.4rem;
+  color: #a99890;
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes h4 {
+  margin-top: 1.5rem;
+  font-size: 1.9rem;
+  color: #d56d3f;
+}
+.page-popular_dishes .page-poular_itens_container .item_dishes button {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  width: 4rem;
+  height: 3.8rem;
+  border: none;
+  cursor: pointer;
+  background-image: url(../img/bag.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d56d3f;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
